@@ -30,17 +30,15 @@ Your build host must install required packages for the Yocto build. Reference th
 ```sh
 mkdir <release>
 cd <release>
-repo init -u https://github.com/cargt/imx_manifest -b <branch name> [ -m <release manifest>]
+repo init -u https://github.com/cargt/imx_manifest -b wrynose -m cargt-imx-6.18.20-2.0.0.xml
 repo sync
 ```
-
-Each branch has detailed READMEs describing exact syntax.
 
 ---
 
 ## Examples
 
-To download the 6.18.20-2.0.0 release:
+To download this release (6.18.20-2.0.0):
 
 ```sh
 repo init -u https://github.com/cargt/imx_manifest -b wrynose -m cargt-imx-6.18.20-2.0.0.xml
