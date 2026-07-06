@@ -21,7 +21,7 @@ PATH=${PATH}:~/bin
 
 Your build host must install required packages for the Yocto build. Reference the section "Build Host Packages" in the document "Yocto Project Quick build":
 
-- https://docs.yoctoproject.org/5.1.2/brief-yoctoprojectqs/index.html#build-host-packages
+- https://docs.yoctoproject.org/6.0/brief-yoctoprojectqs/index.html#build-host-packages
 
 ---
 
@@ -40,10 +40,10 @@ Each branch has detailed READMEs describing exact syntax.
 
 ## Examples
 
-To download the 6.6.36-2.1.0 release:
+To download the 6.18.20-2.0.0 release:
 
 ```sh
-repo init -u https://github.com/cargt/imx_manifest -b scarthgap -m cargt-imx-6.6.36-2.1.0.xml
+repo init -u https://github.com/cargt/imx_manifest -b wrynose -m cargt-imx-6.18.20-2.0.0.xml
 ```
 
 ---
