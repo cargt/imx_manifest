@@ -16,8 +16,10 @@
   <remote name="imx-support" fetch="https://github.com/nxp-imx-support"/>
 
   <remote name="cargt"       fetch="https://github.com/cargt"/>
-  
+
   <remote name="sbabic"      fetch="https://github.com/sbabic" />
+
+  <remote name="azure"       fetch="https://github.com/Azure"/>
 
   <project name="poky" remote="yp" path="sources/poky" revision="f43f393ef0246b7bee6eed8bcf8271cf2b8cdf40" upstream="scarthgap"/>
   <project name="meta-openembedded" remote="oe" path="sources/meta-openembedded" revision="80e01188fa822d87d301ee71973c462d7a865493" upstream="scarthgap"/>
@@ -47,6 +49,8 @@
   <project name="meta-imx-frdm" remote="imx-support" path="sources/meta-imx-frdm" revision="0391d7457a9f044f2b38ed3f91570926a669261b" upstream="lf-6.6.36-2.1.0" />
 
   <project remote="sbabic" name="meta-swupdate" path="sources/meta-swupdate" revision="1600c74ed6d9eabc15a680a7a4cb359aa537bd65" upstream="scarthgap"/>
+
+  <project remote="azure" name="meta-iotedge" path="sources/meta-iotedge" revision="17098956e8d6bd16beea4d18e24c4cecf93dc837" upstream="main"/>
 
   <project remote="cargt" name="meta-imx-cargt" path="sources/meta-imx-cargt" revision="scarthgap" upstream="scarthgap">
      <linkfile dest="imx-cargt-setup.sh" src="tools/imx-cargt-setup.sh"/>
