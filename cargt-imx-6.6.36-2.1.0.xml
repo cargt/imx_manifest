@@ -52,6 +52,8 @@
 
   <project remote="azure" name="meta-iotedge" path="sources/meta-iotedge" revision="17098956e8d6bd16beea4d18e24c4cecf93dc837" upstream="main"/>
 
+  <project name="meta-lts-mixins" remote="yp" path="sources/meta-lts-mixins" revision="9987a76095ee751864e55e418539f42b9c3b8a6b" upstream="scarthgap/rust" />
+
   <project remote="cargt" name="meta-imx-cargt" path="sources/meta-imx-cargt" revision="scarthgap" upstream="scarthgap">
      <linkfile dest="imx-cargt-setup.sh" src="tools/imx-cargt-setup.sh"/>
   </project>
