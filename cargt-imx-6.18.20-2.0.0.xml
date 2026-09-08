@@ -17,6 +17,7 @@
 
   <remote name="cargt"       fetch="https://github.com/cargt"/>
   <remote name="sbabic"      fetch="https://github.com/sbabic" />
+  <remote name="azure"       fetch="https://github.com/Azure"/>
 
   <project name="bitbake" remote="oe" path="sources/bitbake" revision="a2dd9be788274d9c7280be5b1be5eb5c3990cf54" upstream="2.18"/>
   <project name="openembedded-core" remote="oe" path="sources/openembedded-core" revision="42fa856a00ac16b2a7a83d7ecfa60a5be192b16c" upstream="wrynose" />
@@ -51,5 +52,7 @@
   <project remote="cargt" name="meta-imx-cargt" path="sources/meta-imx-cargt" revision="wrynose" upstream="wrynose">
      <linkfile dest="imx-cargt-setup.sh" src="tools/imx-cargt-setup.sh"/>
   </project>
+
+  <project remote="azure" name="meta-iotedge" path="sources/meta-iotedge" revision="17098956e8d6bd16beea4d18e24c4cecf93dc837" upstream="main"/>
 
 </manifest>
