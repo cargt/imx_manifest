@@ -18,6 +18,7 @@
   <remote name="cargt"       fetch="https://github.com/cargt"/>
   <remote name="sbabic"      fetch="https://github.com/sbabic" />
   <remote name="azure"       fetch="https://github.com/Azure"/>
+  <remote name="rte"         fetch="https://github.com/nxp-real-time-edge-sw"/>
 
   <project name="bitbake" remote="oe" path="sources/bitbake" revision="a2dd9be788274d9c7280be5b1be5eb5c3990cf54" upstream="2.18"/>
   <project name="openembedded-core" remote="oe" path="sources/openembedded-core" revision="42fa856a00ac16b2a7a83d7ecfa60a5be192b16c" upstream="wrynose" />
@@ -54,5 +55,10 @@
   </project>
 
   <project remote="azure" name="meta-iotedge" path="sources/meta-iotedge" revision="17098956e8d6bd16beea4d18e24c4cecf93dc837" upstream="main"/>
+
+  <!-- NXP Real-time Edge 3.5 (PREEMPT_RT kernel + RTE userspace), used by the cargt-imx-rt distro.
+       Same base layer revisions as real-time-edge-3.5.0.xml. -->
+  <project remote="rte" name="meta-real-time-edge" path="sources/meta-real-time-edge" revision="refs/tags/Real-Time-Edge-v3.5-202607" upstream="real-time-edge-wrynose"/>
+  <project remote="rte" name="meta-rtos-industrial" path="sources/meta-rtos-industrial" revision="refs/tags/Real-Time-Edge-v3.5-202607" upstream="wrynose"/>
 
 </manifest>
